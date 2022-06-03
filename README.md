@@ -1,0 +1,7 @@
+Title: KMeans Algorithm for Clustering Smartphone Data Recognizing Human Activity
+
+Data Link: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Description: Smartphone data was collected from 30 volunteers that performed various activities. The data was formatted to have 561 different aspects, all taken from the accelerator and gyroscope of each volunteer's phone, and each data point was given a label of what action was being performed. The goal of the Clustering Algorithm was to be able to train a re-labeling process that can label new data points correctly. R was chosen as the language due to the amount of mathematics required for the algorithm, as well as the tools it provides for tables and matrices. The KMeans Algorithm was chosen due to it's low space-complexity and simplicity. The downsides of the KMeans Algorthim are its high time-complexity and it's greedy nature. The Algorithm takes in training data and an assigned K cluster amount. After the clustering process finishes with the training data, the clusters are given a probability of each label occuring in the cluster, based on the frequency of each label being assigned to the cluster. Finally, for each new data point from a given validation data, a random number is generated and a label is assigned based on both the nearing cluster the new data point is closest to and the results of the random number generated. Whether the label was correct or not was recorded at the end.
+
+Current Results: The relabeling process is approximately 60% accurate
